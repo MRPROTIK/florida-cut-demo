@@ -25,50 +25,86 @@
     <p class="hero-sub">Pick your service and a time that works — we'll confirm by text within one business day.</p>
   </section>
 
-  <!-- ============ BOOKING FORM ============ -->
-  <section class="services-teaser">
-    <form class="contact-form" action="https://formspree.io/f/mwvddpew" method="POST">
+  <!-- ============ BOOKING ============ -->
+  <section class="booking-section">
+    <div class="booking-intro">
+      <svg class="booking-watermark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <circle class="badge-ring" cx="50" cy="50" r="46" stroke-width="0.6"/>
+        <g class="badge-laurel" stroke-width="0.6" stroke-linecap="round">
+          <path d="M22 62 C18 54 18 44 23 36" opacity="0.9"/>
+          <path d="M20 58 L13 60 M21 51 L14 51.5 M23 44 L17 43 M27 38 L22 35.5"/>
+        </g>
+        <g class="badge-laurel" stroke-width="0.6" stroke-linecap="round">
+          <path d="M78 62 C82 54 82 44 77 36" opacity="0.9"/>
+          <path d="M80 58 L87 60 M79 51 L86 51.5 M77 44 L83 43 M73 38 L78 35.5"/>
+        </g>
+        <g class="badge-tools" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M34 34 L66 66 M62 66 L69 66 L69 62"/>
+          <path d="M66 34 L34 66 M35 60 v6 M40 58 v8 M45 56 v10 M50 55 v11 M55 56 v10 M60 58 v8 M65 60 v6" stroke-width="0.5"/>
+        </g>
+      </svg>
 
-      <div class="form-field">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+      <div class="booking-intro-inner">
+        <span class="section-eyebrow">Reservation</span>
+        <h2>"Booked in seconds. Cut with care."</h2>
+        <p>Fill in your details and preferred time — Florida Cut confirms every reservation by text, so you always know exactly when to walk in.</p>
+
+        <ul class="booking-points">
+          <li>Confirmation sent by text within one business day</li>
+          <li>Open Tue–Sat, 9am – 7pm · Closed Sun &amp; Mon</li>
+          <li>7715 Henry Street, Miami FL 33169</li>
+        </ul>
       </div>
+    </div>
 
-      <div class="form-field">
-        <label for="mobile">Mobile</label>
-        <input type="tel" id="mobile" name="mobile" required>
-      </div>
+    <div class="booking-form-card">
+      <form class="contact-form" action="https://formspree.io/f/mwvddpew" method="POST">
 
-      <div class="form-field">
-        <label for="service">Service</label>
-        <select id="service" name="service" required>
-          <option value="" disabled selected>Choose a service</option>
-          <option value="Classic Cut">Classic Cut — $40 / 30 min</option>
-          <option value="Signature Fade">Signature Fade — $55 / 45 min</option>
-          <option value="Beard Sculpt & Shave">Beard Sculpt &amp; Shave — $35 / 30 min</option>
-          <option value="The Full Works">The Full Works — $85 / 75 min</option>
-        </select>
-      </div>
+        <div class="booking-form-row">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
 
-      <div class="form-field">
-        <label for="date">Preferred Date</label>
-        <input type="date" id="date" name="preferred_date" required>
-      </div>
+          <div class="form-field">
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile" required>
+          </div>
+        </div>
 
-      <div class="form-field">
-        <label for="time">Preferred Time</label>
-        <input type="time" id="time" name="preferred_time" required>
-      </div>
+        <div class="form-field">
+          <label for="service">Service</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Choose a service</option>
+            <option value="Classic Cut">Classic Cut — $40 / 30 min</option>
+            <option value="Signature Fade">Signature Fade — $55 / 45 min</option>
+            <option value="Beard Sculpt & Shave">Beard Sculpt &amp; Shave — $35 / 30 min</option>
+            <option value="The Full Works">The Full Works — $85 / 75 min</option>
+          </select>
+        </div>
 
-      <div class="form-field">
-        <label for="notes">Notes (optional)</label>
-        <textarea id="notes" name="notes"></textarea>
-      </div>
+        <div class="booking-form-row">
+          <div class="form-field">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="preferred_date" required>
+          </div>
 
-      <button type="submit" class="btn-primary">Request Booking</button>
-      <span class="contact-form-note">Hours: Tue–Sat, 9am–7pm. We'll confirm your slot by text.</span>
+          <div class="form-field">
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="preferred_time" required>
+          </div>
+        </div>
 
-    </form>
+        <div class="form-field">
+          <label for="notes">Notes (optional)</label>
+          <textarea id="notes" name="notes"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Request Booking</button>
+        <span class="contact-form-note">Hours: Tue–Sat, 9am–7pm. We'll confirm your slot by text.</span>
+
+      </form>
+    </div>
   </section>
 
 </main>
