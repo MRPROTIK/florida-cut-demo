@@ -1,0 +1,79 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now — Florida Cut</title>
+<meta name="description" content="Book your cut, fade, or hot towel shave at Florida Cut — Miami barbershop. Pick a service and preferred time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,500;0,600;1,400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+{% include header.html %}
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header">
+    <span class="section-eyebrow">Book Your Cut</span>
+    <h1>Reserve Your Chair.</h1>
+    <p class="hero-sub">Pick your service and a time that works — we'll confirm by text within one business day.</p>
+  </section>
+
+  <!-- ============ BOOKING FORM ============ -->
+  <section class="services-teaser">
+    <form class="contact-form" action="https://formspree.io/f/mwvddpew" method="POST">
+
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile" required>
+      </div>
+
+      <div class="form-field">
+        <label for="service">Service</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Choose a service</option>
+          <option value="Classic Cut">Classic Cut — $40 / 30 min</option>
+          <option value="Signature Fade">Signature Fade — $55 / 45 min</option>
+          <option value="Beard Sculpt & Shave">Beard Sculpt &amp; Shave — $35 / 30 min</option>
+          <option value="The Full Works">The Full Works — $85 / 75 min</option>
+        </select>
+      </div>
+
+      <div class="form-field">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="preferred_date" required>
+      </div>
+
+      <div class="form-field">
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" name="preferred_time" required>
+      </div>
+
+      <div class="form-field">
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Request Booking</button>
+      <span class="contact-form-note">Hours: Tue–Sat, 9am–7pm. We'll confirm your slot by text.</span>
+
+    </form>
+  </section>
+
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>
