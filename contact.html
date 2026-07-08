@@ -1,0 +1,64 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Florida Cut</title>
+<meta name="description" content="Get in touch with Florida Cut — Miami barbershop. Send a message and we'll get back to you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,500;0,600;1,400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+{% include header.html %}
+
+<main>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header">
+    <span class="section-eyebrow">Get In Touch</span>
+    <h1>Questions? Send Us a Line.</h1>
+    <p class="hero-sub">Booking is fastest online, but if you've got a question first, drop us a message and we'll get back to you shortly.</p>
+  </section>
+
+  <!-- ============ CONTACT FORM ============ -->
+  <section class="services-teaser">
+    <form class="contact-form" action="https://formspree.io/f/mwvddpew" method="POST">
+
+      <div class="form-field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="mobile" name="mobile" required>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Send Message</button>
+      <span class="contact-form-note">We'll reply within one business day.</span>
+
+    </form>
+  </section>
+
+  <!-- ============ BOOK BANNER ============ -->
+  <section class="book-banner">
+    <h2>Prefer to just book?</h2>
+    <a href="/booking.html" class="btn-primary">Book Now</a>
+  </section>
+
+</main>
+
+{% include footer.html %}
+
+</body>
+</html>
